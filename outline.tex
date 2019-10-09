@@ -19,7 +19,10 @@
 \setlength{\headheight}{15pt}
 
 \usepackage{siunitx}
+\usepackage[version=4]{mhchem}
 \usepackage{fontawesome5}
+
+\usepackage{tikz}
 
 \newcommand{\tightlist}{\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}}
 \newcommand{\hint}[1]{\textsf{（#1）}}
@@ -42,74 +45,127 @@
 
 \section{绪论}
 \begin{itemize}\tightlist
-    \item 材料决定着人类科技的进步水平：石器时代\to 青铜器时代\to 铁器时代\to 信息材料
-    时代
-    \item 材料两大作用方向：社会生产与发展的物质基础；实现特定功能。
-    \item 工程材料学：以用于工程结构、机器零件的材料\hint{工程材料}为研究对象。
-    \item 四大类：
-    \begin{description}\tightlist
-        \item[金属材料] 各项指标优异，易加工、处理，应用最广；
-        \item[高分子材料] 高弹性、高耐磨性、绝缘好、成本低，强度低，用于低载荷场合；
-        \item[陶瓷材料] 高硬度、绝缘好、耐高温腐蚀，韧性差、成本高，用于抗压力、绝缘等
-        场合。
-        \item[复合材料] 结合两种或两种以上材料特性，比强度、比刚度高，用于航空航天。 
-    \end{description}
-    \item 材料的性能：使用性能、工艺性能。
-    \item 材料的使用性能：材料固有性能\hint{天赋}；成分/组织结构\hint{家庭环境}；合成、
-    加工、处理工艺\hint{教育背景}。
-    \emphitem{没有十全十美的材料；需要根据实际情况，平衡对材料的各项需求。}
+  \item 材料决定着人类科技的进步水平：石器时代\to 青铜器时代\to 铁器时代\to 信息材料
+  时代
+  \item 材料两大作用方向：社会生产与发展的物质基础；实现特定功能。
+  \item 工程材料学：以用于工程结构、机器零件的材料\hint{工程材料}为研究对象。
+  \item 四大类：
+  \begin{description}\tightlist
+      \item[金属材料] 各项指标优异，易加工、处理，应用最广；
+      \item[高分子材料] 高弹性、高耐磨性、绝缘好、成本低，强度低，用于低载荷场合；
+      \item[陶瓷材料] 高硬度、绝缘好、耐高温腐蚀，韧性差、成本高，用于抗压力、绝缘等
+      场合。
+      \item[复合材料] 结合两种或两种以上材料特性，比强度、比刚度高，用于航空航天。
+  \end{description}
+  \item 材料的性能：使用性能、工艺性能。
+  \item 材料的使用性能：材料固有性能\hint{天赋}；成分/组织结构\hint{家庭环境}；合成、
+  加工、处理工艺\hint{教育背景}。
+  \emphitem{没有十全十美的材料；需要根据实际情况，平衡对材料的各项需求。}
 \end{itemize}
 
 \section{机械零件（或器件）的失效分析}
 
 \begin{itemize}\tightlist
-    \item 失效：失去设计要求的效能。
-    \item 常见失效形式：过量变形、断裂、磨损、腐蚀。
+  \item 失效：失去设计要求的效能。
+  \item 常见失效形式：过量变形、断裂、磨损、腐蚀。
 \end{itemize}
 
 \subsection{过量变形}
 
 \begin{itemize}\tightlist
-    \item 弹性变形与塑性变形。
-    \item 常见材料的应力 -- 应变曲线走势。
-    \item 静载性能指标：刚度 $EA$ \hint{抵抗弹性变形}、强度 $\sigma$ \hint{抵抗变形
-    与断裂}。\emph{刚度一定是与弹性变形有关，不涉及塑性变形！}
-    \item 刚度与强度分别用弹性能 $u=\frac12\sigma_e\ve_e$、断后伸长率 $A$ 与断面收缩
-    率 $Z$ 作为评价指标。
-    \item 刚度指标\hint{弹性模量 $E$}不易由加工改变，强度指标\hint{各强度极限}容易由
-    加工改变！
+  \item 弹性变形与塑性变形。
+  \item 常见材料的应力 -- 应变曲线走势。
+  \item 静载性能指标：刚度 $EA$ \hint{抵抗弹性变形}、强度 $\sigma$ \hint{抵抗变形
+  与断裂}。\emph{刚度一定是与弹性变形有关，不涉及塑性变形！}
+  \item 刚度与强度分别用弹性能 $u=\frac12\sigma_e\ve_e$、断后伸长率 $A$ 与断面收缩
+  率 $Z$ 作为评价指标。
+  \item 刚度指标\hint{弹性模量 $E$}不易由加工改变，强度指标\hint{各强度极限}容易由
+  加工改变！
 \end{itemize}
 
 \subsection{断裂}
 
 \begin{itemize}\tightlist
-    \item 断裂：材料在应力作用下分为两个或以上部分。
-    \begin{description}\tightlist
-        \item[韧性断裂] 断裂前发生明显宏观塑性变形\hint{低碳钢拉伸}。
-        \item[脆性断裂] 断裂前不发生塑性变形\hint{灰铸铁拉伸}。
-    \end{description}
-    \emphitem{脆性断裂更为致命，需要警惕。}
-    \item 断裂过程：裂纹形成\to 扩展\hint{亚稳扩展、失稳扩展}；裂纹的临界长度 $a_c$：
-    亚稳与失稳的分界线。
-    \item 脆性断裂：$a_c$ 太低。
-    \emphitem{韧性是材料强度与塑形的综合体现。}
-    \item 冲击韧性：材料在冲击载荷下吸收塑性变形功、断裂功的能力，用冲击韧度 $a_K=A_K/
-    F_K$\hint{冲击功比截面积}评价。
-    \minor{\item 常用冲击试验确定材料的冲击功，进而计算冲击韧性。}
-    \item 韧脆转变温度 $T_K$：在\hint{低}温下材料韧性急剧下降的一温度点；低温脆性断裂
-    现象。
-    \item 冲击韧性指标的不足：未考虑到材料内部缺陷\hint{微小的宏观裂纹}。
-    \item 断裂韧性：材料抵抗脆性断裂的能力，用
-    \[K_{Ic}=Y\sigma\sqrt a\]
-    校核\hint{$Y=1\sim2$ 为几何形状因子，$\sigma$ 为零件工作应力，$a$ 为裂纹长度。}
-    \item 断裂韧度 $K_{Ic}=K_I(a_c)$；$K_I<K_{Ic}$ 为校核条件。
-    \item \minor{三类断裂形式：拉伸断裂（I）、剪切断裂（II），扭转断裂（III）。}
-    \item 断裂韧度比较：纯金属 $>$ 合金 $>$ 复合材料 $>$ 高分子、陶瓷。
-    \item 加载方式与材料属性对断裂的影响：作 $\tau_{\max}$ -- $\sigma_{\max}$ 图分析。
-    % 此处应列子条目详述原则。
-    \item 疲劳断裂：经长时间交变载荷作用而断裂。
+  \item 断裂：材料在应力作用下分为两个或以上部分。
+  \begin{description}\tightlist
+      \item[韧性断裂] 断裂前发生明显宏观塑性变形\hint{低碳钢拉伸}。
+      \item[脆性断裂] 断裂前不发生塑性变形\hint{灰铸铁拉伸}。
+  \end{description}
+  \emphitem{脆性断裂更为致命，需要警惕。}
+  \item 断裂过程：裂纹形成\to 扩展\hint{亚稳扩展、失稳扩展}；裂纹的临界长度 $a_c$：
+  亚稳与失稳的分界线。
+  \item 脆性断裂：$a_c$ 太低。
+  \emphitem{韧性是材料强度与塑形的综合体现。}
+  \item 冲击韧性：材料在冲击载荷下吸收塑性变形功、断裂功的能力，用冲击韧度 $a_K=A_K/
+  F_K$\hint{冲击功比截面积}评价。
+  \minor{\item 常用冲击试验确定材料的冲击功，进而计算冲击韧性。}
+  \item 韧脆转变温度 $T_K$：在\hint{低}温下材料韧性急剧下降的一温度点；低温脆性断裂
+  现象。
+  \item 冲击韧性指标的不足：未考虑到材料内部缺陷\hint{微小的宏观裂纹}。
+  \item 断裂韧性：材料抵抗脆性断裂的能力，用
+  \[K_{Ic}=Y\sigma\sqrt a\]
+  校核\hint{$Y=1\sim2$ 为几何形状因子，$\sigma$ 为零件工作应力，$a$ 为裂纹长度。}
+  \item 断裂韧度 $K_{Ic}=K_I(a_c)$；$K_I<K_{Ic}$ 为校核条件。
+  \item \minor{三类断裂形式：拉伸断裂（I）、剪切断裂（II），扭转断裂（III）。}
+  \item 断裂韧度比较：纯金属 $>$ 合金 $>$ 复合材料 $>$ 高分子、陶瓷。
+  \item 加载方式与材料属性对断裂的影响：作 $\tau_{\max}$ -- $\sigma_{\max}$ 图分析。
+  % 此处应列子条目详述原则。
+  \item 疲劳断裂：经长时间交变载荷作用而断裂。
 \end{itemize}
 
 \subsection{磨损}
+
+\subsection{腐蚀}
+
+\subsection{高温失效}
+
+
+\section{碳钢}
+
+\subsection{纯铁与铁碳合金}
+
+\subsection{铁碳相图}
+
+\begin{itemize}\tightlist
+  \item 相图：合金在缓慢冷却的平衡状态下，相（或组织）与温度、成分二者的关系。
+  \item 铁碳相图：\ce{Fe} 与 \ce{Fe3C} 的复杂二元相图。
+  \item 相图是炼钢遵循的「地图」，决定了不同条件下铁碳合金的最终形态与性能。
+  \item 相图绘制方法：热分析法，测定不同成分合金的冷却曲线，连接各曲线临界点\hint{始凝温度、终凝温度}。\hint{实例：\ce{Cu} - \ce{Ni} 相图}
+  \begin{itemize}
+    \item 两条曲线：液相线、固相线。
+    \item 三区：液相单项区（L）、固液共存两相区（L $+$ $\alpha$）、固相单相区（$\alpha$）。
+    \item 匀晶转变：液相直接冷却结晶至固相，非恒温过程。
+  \end{itemize}
+  \item 判断两相区中各相占比，可采用二元相图的杠杆定律：$M_L\cdot\overline{ar}=M_\alpha\cdot
+  \overline{rb}$，其中 $M_L$ 与 $M_\alpha$ 分别为两相质量占比。
+  \item 杠杆定律图示：在相图中的合金状态对应点，作一水平直线与两曲线相交。
+  \item \ce{Fe} - \ce{Fe3C} 相图：$3$ 个恒温转变，$4(+1)$ 个单相区，$7$ 个两相区。
+  \begin{figure}[htbp]
+  \small\centering
+  \begin{tikzpicture}[xscale=2]
+    \draw (0,0) -- (6.69,0) -- (6.69,6.4) -- (0,6.4) -- cycle;
+    \draw (0,6.152) node (A) [fill=black, inner sep=1pt, label=135:$A$] {}
+    parabola (0.53,5.98) node (B) [fill=black, inner sep=1pt, label=90:$B$] {}
+    parabola (4.30,4.592) node (C) [fill=black, inner sep=1pt, label=90:$C$] {};
+    \draw[dashed] (C) parabola[bend at end] (6.69,4.854) node [fill=black, inner sep=1pt, label=15:$D$] {};
+    \draw (A) parabola (0.09,5.98) node (H) [fill=black, inner sep=1pt, label=180:$H$] {}
+    -- (0.17,5.98) node (J) [fill=black, inner sep=1pt, label=-90:$J$] {} -- (B) {};
+    \draw (0, 5.576) node (N) [fill=black, inner sep=1pt, label=-135:$N$] {}
+    parabola[bend at end] (H) {};
+    \draw (N) {} parabola[bend at end] (J) {};
+    \draw (J) {} parabola (2.11,4.592) node (E) [fill=black, inner sep=1pt, label=-45:$E$] {}
+    -- (C) {} -- (6.69,4.592) node (F) [fill=black, inner sep=1pt, label=0:$F$] {};
+    \draw (0,3.648) node (G) [fill=black, inner sep=1pt, label=135:$G$] {}
+    parabola[bend at end] (0.77,2.908) node (S) [fill=black, inner sep=1pt, label=90:$S$] {}
+    parabola (E) {};
+    \draw (G) {} parabola (0.0218,2.908) node (P) [fill=black, inner sep=1pt, label=-45:$P$] {}
+    -- (S) {} -- (6.69,2.908) node (K) [fill=black, inner sep=1pt, label=0:$K$] {};
+    \draw (P) {} parabola (0.0008,0.1) node [fill=black, inner sep=1pt, label=180:$Q$] {};
+  \end{tikzpicture}
+  \caption{\ce{Fe} - \ce{Fe3C}相图}\label{fig:phase-graph}
+  \end{figure}
+\end{itemize}
+
+
 
 \end{document}
