@@ -16,7 +16,7 @@ module.exports = {
     headHtml: "",
     footHtml: "",
     isMinify: true,
-    rootPath: "/"
+    rootPath: "/outline-eng-mat/"
   },
   nav: {
     tree: "./tree"
