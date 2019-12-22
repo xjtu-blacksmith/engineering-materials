@@ -1,5 +1,5 @@
 - [简介](/index)
-- [第一章：机械零件（或器件）的失效分析](/chapter/chp1)
+- [第一章：失效分析](/chapter/chp1)
 - [第二章：碳钢](/chapter/chp2)
 - [第三章：钢的热处理](/chapter/chp3)
 - [第四章：合金钢](/chapter/chp4)
@@ -11,3 +11,4 @@
 - [第十章：功能材料](/chapter/chp10)
 - +附录
     - [附录一：选材与工艺路线设计](/appendix/app1)
+    - [附录二：疑难内容讨论](/appendix/app2)
