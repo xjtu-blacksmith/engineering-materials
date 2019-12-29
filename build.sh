@@ -1,3 +1,4 @@
+rm -rf docs
 cd source
 teadocs build
 cp -r build ../docs
