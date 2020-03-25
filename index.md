@@ -4,8 +4,6 @@ homepage: true
 title:
 ---
 
-# 工程材料基础课程提纲
-
 仅此。
 
 # 目录
