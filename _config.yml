@@ -1,0 +1,33 @@
+# name of the software
+name: 工程材料基础
+start_url: /chp1
+
+project:
+    version: 2020 Spring
+    download_url: https://github.com/xjtu-blacksmith/testing-technology-in-power-engineering
+
+license:
+    software: MIT License
+    software_url: https://opensource.org/licenses/MIT
+
+    docs: CC BY-SA 4.0
+    docs_url: https://creativecommons.org/licenses/by-sa/4.0/
+
+links:
+    header:
+      - title: GitHub
+        url: https://github.com/allejo/jekyll-docs-theme
+    footer:
+      - title: GitHub
+        url: https://github.com/allejo/jekyll-docs-theme
+
+ui:
+    header:
+        color1: "#F78E6F"
+        color2: "#E36348"
+        trianglify: true
+
+# Build settings
+exclude:
+    - Gemfile
+    - Gemfile.lock
