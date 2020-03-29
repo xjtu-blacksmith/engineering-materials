@@ -2,6 +2,7 @@
 layout: page
 title: 钢的热处理
 permalink: /chp3
+order: 3
 ---
 
 - 热处理：对金属进行加热、保温、冷却，以改变金属的组织、性能。

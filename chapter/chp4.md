@@ -2,6 +2,7 @@
 layout: page
 title: 合金钢
 permalink: /chp4
+order: 4
 ---
 
 - 碳钢的缺点

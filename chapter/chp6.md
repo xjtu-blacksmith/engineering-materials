@@ -2,6 +2,7 @@
 layout: page
 title: 有色金属及其合金
 permalink: /chp6
+order: 6
 ---
 
 - 有色金属：除铁（及其合金）意外的其他金属、合金，相较于铁基合金（黑色金属）

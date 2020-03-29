@@ -2,6 +2,7 @@
 layout: page
 title: 铸铁
 permalink: /chp5
+order: 5
 ---
 
 - 铸铁：含碳量大于 2.11%（一般为 2.5~5.0%），并含有 $\ce{Si}$、$\ce{Mn}$、$\ce{S}$、$\ce{P}$ 等元素的多元铁基合金

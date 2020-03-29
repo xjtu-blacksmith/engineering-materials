@@ -2,6 +2,7 @@
 layout: page
 title: 碳钢
 permalink: /chp2
+order: 2
 ---
 
 - 碳钢：由 $\ce{Fe}$、$\ce{C}$ 两种元素合成的合金。

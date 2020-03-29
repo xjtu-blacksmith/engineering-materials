@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 机械零件（或器件）的失效分析
+title: 失效分析
 permalink: /chp1
+order: 1
 ---
 
 - 失效：失去设计要求的效能。

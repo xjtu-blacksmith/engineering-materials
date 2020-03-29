@@ -2,6 +2,7 @@
 layout: page
 title: 功能材料
 permalink: /chp10
+order: 10
 ---
 
 - 功能材料：以特殊的电、磁、声、光、热、化学、生物学等性能作为主要使用性能之材料
