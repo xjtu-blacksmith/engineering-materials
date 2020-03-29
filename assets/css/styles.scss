@@ -15,6 +15,11 @@ img {
   padding-top: 50px;
   padding-bottom: 40px;
   margin-bottom: 20px;
+
+  p.version {
+    text-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 20px white;
+    font-weight: bold;
+  }
 }
 
 .bs-docs-header h1, .bs-docs-header p {
@@ -66,6 +71,30 @@ img {
   color: unset !important;
 }
 
-.bs-docs-section ul li {
-  margin: 0.5ex auto;
+.bs-docs-section {
+  ul li {
+    margin: 0.5ex auto;
+  }
+  h1, h2 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 2em;
+    padding-bottom: 0.5ex;
+    border-bottom: 1px dashed lightgray;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  dl {
+    border: 2px solid gray;
+    padding: 10px;
+    dd {
+      text-indent: 2em;
+      margin-top: 1ex;
+    }
+  }
 }

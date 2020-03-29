@@ -12,19 +12,11 @@ license:
 
     docs: CC BY-SA 4.0
     docs_url: https://creativecommons.org/licenses/by-sa/4.0/
-
-links:
-    header:
-      - title: GitHub
-        url: https://github.com/allejo/jekyll-docs-theme
-    footer:
-      - title: GitHub
-        url: https://github.com/allejo/jekyll-docs-theme
-
+    
 ui:
     header:
-        color1: "#F78E6F"
-        color2: "#E36348"
+        color1: "#08387D"
+        color2: "#808FD4"
         trianglify: true
 
 # Build settings
